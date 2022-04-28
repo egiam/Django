@@ -1,0 +1,7 @@
+- Ir a la carpeta en la consola, como admin
+- python -m venv venv
+- venv\Scripts\activate
+- pip install django
+- django-admin startproject [NombreP]
+- python manage.py migrate
+- python manage.py runserver
