@@ -1,0 +1,55 @@
+<html>
+
+<body>
+    <h1>Hola, mi primera plantilla con Django.</h1>
+
+    {% if nombre_persona == 'Manuel' %}
+
+    <p>El curso lo imparte el profesor titular.</p>
+
+    {% else %}
+
+    <!-- No temas we -->
+
+    <p>El curso lo imparte el profesor suplente.</p>
+
+    {% endif %}
+
+    <p>El nombre del profesor es: {{nombre_persona}} {{apellido_persona}}</p>
+    <p>
+        Dia: {{momento_actual.day}} / {{momento_actual.month}} / {{momento_actual.year}}
+    </p>
+
+    <p>
+        Temas del curso: <br />
+        <ul>
+            {% if temas %} {% for elTema in temas %}
+            <li>
+                {{elTema}}
+            </li>
+            {% endfor %} {% else %}
+
+            <p>No hay elementos que mostrar</p>
+
+            {% endif %}
+        </ul>
+    </p>
+
+    <p>
+        Temas del curso: <br />
+        <ul>
+            {% if temas %} {% for elTema in temas %}
+            <li>
+                {{elTema|first|upper}}
+                <!-- muestra la Primera letra nomas-->
+            </li>
+            {% endfor %} {% else %}
+
+            <p>No hay elementos que mostrar</p>
+
+            {% endif %}
+        </ul>
+    </p>
+</body>
+
+</html>

@@ -54,7 +54,7 @@ ROOT_URLCONF = 'Proyecto1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['C:/Users/ezegi/OneDrive/Documentos/Educacion/Django/PildorasInformaticas/Proyecto1/Proyecto1/Plantillas'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

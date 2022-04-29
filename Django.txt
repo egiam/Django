@@ -5,3 +5,6 @@
 - django-admin startproject [NombreP]
 - python manage.py migrate
 - python manage.py runserver
+
+
+Video importante de templates: Vid 8
