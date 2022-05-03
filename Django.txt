@@ -3,6 +3,14 @@
 - venv\Scripts\activate
 - pip install django
 - django-admin startproject [NombreP]
+
+- python manage.py startapp [NombreApp]
+- Ir a settings del proyecto, en installed_apps agregar el nombre de la app.
+- Ir a urls del proyecto, importar 'include' y agregarle el path hacia la app.
+- ASI: path('ANIONUEVO/', include("ANIONUEVO.urls")),
+- Agregar un new file de urls.py en la app
+
+
 - python manage.py migrate
 - python manage.py runserver
 

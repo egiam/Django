@@ -1,0 +1,13 @@
+{% extends "tareas/layout.html" %}
+<!--De layout-->
+{% block body %} {% for una_tarea in tareas %}
+
+<ul>
+    <li>{{ una_tarea }}</li>
+</ul>
+
+<div class="acciones">
+    <a href="{% url 'TAREAS:agregar' %}"> Agregar una nueva tarea </a>
+</div>
+
+{% endfor %} {% endblock %}

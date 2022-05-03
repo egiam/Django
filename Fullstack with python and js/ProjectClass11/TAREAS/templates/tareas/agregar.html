@@ -1,0 +1,28 @@
+{% extends "tareas/layout.html" %}
+<!--De layout-->
+{% block head %}
+<title>Agregar</title>
+{% endblock %}
+
+<!-- Empieza el bloque body -->
+{% block body %}
+<!-- El for para las listas -->
+{% for una_tarea in tareas %}
+
+<h1>Alta de Tarea</h1>
+<form action="{% url 'TAREAS:agregar' %}" method="post">
+    {% csrf_token %}
+    <!--Saca el error del CSRF token-->
+
+    {{ formulario_alta_tarea }}
+    <!-- <input type="text" name="tarea" /> -->
+    <input type="submit" value="Guardar" />
+</form>
+
+<div class="acciones">
+    <a href="{% url 'TAREAS:index' %}"> Volver a la lista de tareas </a>
+</div>
+
+{% endfor %}
+<!-- Termina el bloque -->
+{% endblock %}
