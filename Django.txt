@@ -10,9 +10,10 @@
 - ASI: path('ANIONUEVO/', include("ANIONUEVO.urls")),
 - Agregar un new file de urls.py en la app
 
-
+- python manage.py makemigrations
 - python manage.py migrate
 - python manage.py runserver
+- python manage.py createsuperuser --> darle name --> darle email --> darle contra
 
 
 Video importante de templates: Vid 8
